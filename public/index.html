@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relay Depository</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: #333;
+        }
+        h1 {
+            color: #000;
+            border-bottom: 2px solid #000;
+            padding-bottom: 0.5rem;
+        }
+        h2 {
+            color: #222;
+            margin-top: 2rem;
+        }
+        a {
+            color: #0070f3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .warning {
+            background: #fff4e6;
+            border-left: 4px solid #ff9800;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        li {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relay Depository</h1>
+    
+    <div class="warning">
+        <strong>Warning:</strong> This repository has been archived and its content has been merged in 
+        <a href="https://github.com/relayprotocol/settlement-protocol">settlement-protocol</a>
+    </div>
+
+    <h2>Overview</h2>
+    <p>
+        The Relay Depository is a cross-chain protocol that securely manages user deposits and enables 
+        controlled withdrawals through a trusted allocator mechanism. It acts as a financial coordination 
+        layer across multiple blockchain environments, with implementations for Ethereum Virtual Machine 
+        (EVM) chains, Solana, and in development for Sui and TON.
+    </p>
+
+    <h2>Core Operations</h2>
+    <ul>
+        <li><strong>Deposits:</strong> Users can deposit native currencies or tokens into the depository. 
+            Each deposit is associated with an ID that links to an intended action or purpose.</li>
+        <li><strong>Withdrawals:</strong> An authorized allocator can sign withdrawal requests to transfer 
+            funds from the depository. These withdrawals are executed as on-chain transactions verified 
+            against the allocator's cryptographic signature.</li>
+    </ul>
+
+    <h2>Implementations</h2>
+    <ul>
+        <li><a href="https://github.com/97dbv2vzk6-coder/relay-depository/blob/main/docs/EthereumVMImplementation.md">Ethereum VM</a></li>
+        <li><a href="https://github.com/97dbv2vzk6-coder/relay-depository/blob/main/docs/SolanaVMImplementation.md">Solana VM</a></li>
+        <li><a href="https://github.com/97dbv2vzk6-coder/relay-depository/blob/main/docs/SuiVMImplementation.md">Sui VM (Development)</a></li>
+        <li><a href="https://github.com/97dbv2vzk6-coder/relay-depository/blob/main/docs/TonVMImplementation.md">TON VM (Development)</a></li>
+    </ul>
+
+    <h2>Security</h2>
+    <p>
+        The Relay Depository contracts have undergone comprehensive security audits. View the 
+        <a href="https://github.com/97dbv2vzk6-coder/relay-depository/tree/main/audit-reports">audit reports</a>.
+    </p>
+
+    <h2>Resources</h2>
+    <ul>
+        <li><a href="https://github.com/97dbv2vzk6-coder/relay-depository">GitHub Repository</a></li>
+        <li><a href="https://github.com/relayprotocol/settlement-protocol">Settlement Protocol (Active Repository)</a></li>
+    </ul>
+
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
