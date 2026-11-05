@@ -1,0 +1,19 @@
+{
+  "name": "relay-depository",
+  "version": "1.0.0",
+  "description": "Relay Depository - Cross-chain protocol for secure deposit management",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site - no build needed'",
+    "lint": "echo 'No linting configured'"
+  },
+  "keywords": [
+    "relay",
+    "blockchain",
+    "cross-chain",
+    "deposits"
+  ],
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
